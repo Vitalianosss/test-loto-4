@@ -1,0 +1,40 @@
+.settings_back {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    left: 30px;
+    align-items: center;
+    display: flex;
+
+    &-img {
+        width: 100px;
+        fill: var(--color-orange-background);
+        transition: var(--transition-all);
+        animation: arrow_animation 3s normal infinite ease-in-out 0s;
+    }
+
+    &-p {
+        font-size: 32px;
+        color: var(--color-light-background);
+        font-weight: 700;
+        margin-top: -5px;
+    }
+}
+
+@keyframes arrow_animation {
+    60% {
+        transform: translate(0, 0);
+    }
+    70% {
+        transform: translate(-20px, 0);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+    90% {
+        transform: translate(-15px, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}

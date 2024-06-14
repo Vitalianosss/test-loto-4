@@ -1,0 +1,25 @@
+.checkbox {
+    display: flex;
+    column-gap: .5em;
+    user-select: none;
+}
+
+.checkbox-control:not(:checked) + .checkbox-emulator::after {
+    display: none;
+}
+
+.checkbox-emulator {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--color-light-background);
+    border-radius: 5px;
+    background-color: inherit;
+    position: relative;
+    color: var(--color-orange-background);
+    font-size: 30px;
+    transition: all .1s ease-in-out 0s;
+    cursor: pointer;
+}

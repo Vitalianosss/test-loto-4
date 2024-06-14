@@ -1,0 +1,22 @@
+:root {
+    --color-dark-background:  #3d4b56;
+    --color-dark-background-block: #515f6a;
+    --color-light-background: #ebeced;
+    --color-orange-background: #fe7971;
+    --color-light-text: #cccfd2;
+    --color-dark-text: #5f6d78;
+    --color-white-text: #ffffff;
+    --color-black: #000000;
+
+    --border: 2px solid var(--color-black);
+    --border-radius-big: 60px;
+    --border-radius-small: 10px;
+
+    --font-family: "Roboto Mono", sans-serif;
+
+    --transition-transform: transform .2s ease-in-out 0s;
+    --transition-color: color .2s ease-in-out 0s;
+    --transition-all: all .3s ease-in-out 0s;
+
+    --transition-duration: 0.2s;
+}

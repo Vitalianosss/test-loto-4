@@ -1,0 +1,47 @@
+.wrapper__numbers {
+    width: 100%;
+    background-color: var(--color-dark-text);
+    height: 120px;
+    min-height: 120px;
+    border-radius: var(--border-radius-big);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    &-item {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        min-height: 120px;
+        border-radius: 50%;
+        background-color: var(--color-orange-background);
+        @include flex-center(false);
+        border: 2px solid var(--color-light-text);
+
+        &:last-child {
+            animation: ball .4s normal ease-in-out 0s;
+        }
+
+        &-p {
+            color: var(--color-white-text);
+            font-weight: 700;
+            font-size: 48px;
+            text-shadow: 0 0 5px var(--color-dark-text);
+        }
+    }
+}
+
+@keyframes ball {
+    from {
+        // transform: translate(120px, 0);
+        // display: none;
+        margin-right: -140px;
+    }
+    to {
+        // transform: translate(0, 0);
+        // display: block;
+        margin-right: 0;
+    }
+}
